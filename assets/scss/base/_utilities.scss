@@ -1,11 +1,23 @@
-@use "../base/reset";
 @use "../abstracts/variables" as variable;
 
 
 .container {
-            width: 100%;
-            max-width: 1080px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
+.grid-3-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-2-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.flex-container {
+    display: flex;
+}

@@ -1,12 +1,11 @@
-@use "../base/reset";
 @use "../abstracts/variables" as variable;
-@use "../base/utilities";
 
 header {
     background-color: variable.$primary-clr;
     height: 15vh;
     display: flex; 
     align-items: center;
+    font-family: variable.$primary-ff-regular;
 
     .container {
         display: flex;  
