@@ -95,6 +95,96 @@ body {
             }
         }
 
+        #realisation {
+            .container {
+                text-align: center;
+                text-transform: uppercase;
+                h2 {
+                    margin: 0;
+                }
 
+                & > p {
+                    margin-top: 0rem;
+                    margin-bottom: 3rem;
+                }
+
+                .grid-3-cols {
+                    gap: 1rem;
+                    margin-bottom: 2rem;
+
+                    .card {
+                        .card__img {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .card__content {
+                            .card__content--title {
+                                margin: 0.5rem;
+                                font-weight: 700;
+                            }
+                            .card__content__adresse {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+                .flex-container {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 5rem;
+                    
+                    a {
+                        @include mixin.button;
+                    }
+                }
+            }
+        }
+
+        #contact {
+            margin-bottom: 4rem;
+            .container {
+
+                h2 {
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin: 0;
+                }
+
+                & > p {
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin: 0 0 2rem;
+                }
+
+                .grid-3-cols {
+                    gap: 2rem;
+                    
+                    .card{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+
+                        .card__img {
+                            height: 90px;
+
+                            img {
+                                height: 100%;
+                            }
+                        }
+                        .card__content {
+                            h3 {
+                                text-transform: uppercase;
+                            }
+
+                            p {
+                                line-height: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

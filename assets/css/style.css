@@ -531,5 +531,81 @@ body main #rendez-vous .container .flex-container .btn {
   text-decoration: none;
   margin-block: 2rem;
 }
+body main #realisation .container {
+  text-align: center;
+  text-transform: uppercase;
+}
+body main #realisation .container h2 {
+  margin: 0;
+}
+body main #realisation .container > p {
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+}
+body main #realisation .container .grid-3-cols {
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+body main #realisation .container .grid-3-cols .card .card__img img {
+  width: 100%;
+}
+body main #realisation .container .grid-3-cols .card .card__content .card__content--title {
+  margin: 0.5rem;
+  font-weight: 700;
+}
+body main #realisation .container .grid-3-cols .card .card__content .card__content__adresse {
+  margin: 0;
+}
+body main #realisation .container .flex-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+body main #realisation .container .flex-container a {
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  background-color: #112E3E;
+  text-transform: uppercase;
+  font-family: "Lato Bold", sans-serif;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+body main #contact {
+  margin-bottom: 4rem;
+}
+body main #contact .container h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+body main #contact .container > p {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 2rem;
+}
+body main #contact .container .grid-3-cols {
+  gap: 2rem;
+}
+body main #contact .container .grid-3-cols .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body main #contact .container .grid-3-cols .card .card__img {
+  height: 90px;
+}
+body main #contact .container .grid-3-cols .card .card__img img {
+  height: 100%;
+}
+body main #contact .container .grid-3-cols .card .card__content h3 {
+  text-transform: uppercase;
+}
+body main #contact .container .grid-3-cols .card .card__content p {
+  line-height: 0.5rem;
+}
 
 /*# sourceMappingURL=style.css.map */
