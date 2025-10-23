@@ -448,4 +448,88 @@ footer .container > p {
   margin-top: 2rem;
 }
 
+body {
+  font-family: "Lato Regular", sans-serif;
+  color: #112E3E;
+  margin: 0;
+}
+body main {
+  margin: 0;
+}
+body main #hero {
+  background-image: url(../img/PHOTO-BUEAU.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
+body main #hero .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  max-width: 1260px;
+}
+body main #hero .container h1 {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: white;
+}
+body main #hero .container h1 .event-meta {
+  color: #EDD154;
+}
+body main #description {
+  text-align: center;
+  margin: 2rem 0 6rem;
+}
+body main #description .container h2 {
+  text-transform: uppercase;
+  margin: 0;
+}
+body main #description .container p {
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+body main #description .container p:last-child {
+  text-transform: none;
+  line-height: 2rem;
+}
+body main #rendez-vous {
+  margin-bottom: 4rem;
+}
+body main #rendez-vous .container .grid-3-cols {
+  gap: 2rem;
+}
+body main #rendez-vous .container .grid-3-cols .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body main #rendez-vous .container .grid-3-cols .card .card__content h3 {
+  text-transform: uppercase;
+}
+body main #rendez-vous .container .grid-3-cols .card .card__content p {
+  line-height: 2rem;
+}
+body main #rendez-vous .container .flex-container {
+  display: flex;
+  justify-content: center;
+}
+body main #rendez-vous .container .flex-container .btn {
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  background-color: #112E3E;
+  text-transform: uppercase;
+  font-family: "Lato Bold", sans-serif;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  margin-block: 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */
