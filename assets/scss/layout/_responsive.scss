@@ -1,0 +1,75 @@
+@use "../abstracts/variables" as variable;
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 20vh;
+        .container {
+            flex-direction: column;
+        }
+    }
+
+    #rendez-vous {
+        .grid-3-cols {
+            grid-template-columns: repeat(4,1fr);
+
+            .card {
+                &:nth-child(-n + 2) {
+                    grid-column: span 2;
+                }
+
+                &:nth-child(3) {
+                    grid-column: 2/4;
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    #realisation {
+        .grid-3-cols {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
+    #contact {
+        .grid-3-cols {
+            grid-template-columns: repeat(4,1fr);
+
+            .card {
+                &:nth-child(-n + 2) {
+                    grid-column: span 2;
+                }
+
+                &:nth-child(3) {
+                    grid-column: 2/4;
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            .grid-3-cols {
+                grid-template-columns: 1fr;
+                .grid__col {
+                    text-align: center;
+                    &:nth-child(1) {
+                        grid-row: 3/4;
+                    }
+                    &:nth-child(3){
+                        align-items: center;
+
+                        &::before {
+                            border: none;
+                            inset: 0;
+                            top: -20px;
+                            border-top: 1px solid variable.$white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
