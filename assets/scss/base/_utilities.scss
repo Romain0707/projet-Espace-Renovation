@@ -1,0 +1,11 @@
+@use "../base/reset";
+@use "../abstracts/variables" as variable;
+
+
+.container {
+            width: 100%;
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
