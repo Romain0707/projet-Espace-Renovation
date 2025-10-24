@@ -8,16 +8,12 @@
     padding: 0 20px;
 }
 
-.grid-3-cols {
+.card-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.grid-2-cols {
+.footer-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.flex-container {
-    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
 }

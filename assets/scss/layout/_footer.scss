@@ -10,11 +10,11 @@ footer {
         padding-top: 2rem;
         padding-bottom: 1rem;
     
-        .grid-3-cols {
+        .footer-container {
             grid-template-columns: 250px auto 250px;
             gap: 2rem;
 
-            .grid__col {
+            .footer_container {
                 position: relative;
                 display: flex;
                 flex-direction: column;
@@ -53,7 +53,7 @@ footer {
                     }
                 }
 
-                .flex-container {
+                .reseau-container {
                     display: flex;
                     gap: 0.5rem;
 

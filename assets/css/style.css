@@ -334,18 +334,14 @@ template {
   padding: 0 20px;
 }
 
-.grid-3-cols {
+.card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.grid-2-cols {
+.footer-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.flex-container {
-  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 body {
@@ -398,26 +394,26 @@ body main #description .container p:last-child {
 body main #rendez-vous {
   margin-bottom: 4rem;
 }
-body main #rendez-vous .container .grid-3-cols {
+body main #rendez-vous .container .card-container {
   gap: 2rem;
 }
-body main #rendez-vous .container .grid-3-cols .card {
+body main #rendez-vous .container .card-container .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-body main #rendez-vous .container .grid-3-cols .card .card__content h3 {
+body main #rendez-vous .container .card-container .card .card__content h3 {
   text-transform: uppercase;
 }
-body main #rendez-vous .container .grid-3-cols .card .card__content p {
+body main #rendez-vous .container .card-container .card .card__content p {
   line-height: 2rem;
 }
-body main #rendez-vous .container .flex-container {
+body main #rendez-vous .container .btn-container {
   display: flex;
   justify-content: center;
 }
-body main #rendez-vous .container .flex-container .btn {
+body main #rendez-vous .container .btn-container .btn {
   display: inline-block;
   padding: 20px 40px;
   border-radius: 4px;
@@ -433,7 +429,7 @@ body main #rendez-vous .container .flex-container .btn {
   border: 1px solid #112E3E;
   transition: all 0.3s ease;
 }
-body main #rendez-vous .container .flex-container .btn:hover {
+body main #rendez-vous .container .btn-container .btn:hover {
   background-color: white;
   color: #112E3E;
 }
@@ -448,29 +444,29 @@ body main #realisation .container > p {
   margin-top: 0rem;
   margin-bottom: 3rem;
 }
-body main #realisation .container .grid-3-cols {
+body main #realisation .container .card-container {
   gap: 1rem;
   margin-bottom: 2rem;
 }
-body main #realisation .container .grid-3-cols .card .card__img {
+body main #realisation .container .card-container .card .card__img {
   width: 100%;
 }
-body main #realisation .container .grid-3-cols .card .card__img img {
+body main #realisation .container .card-container .card .card__img img {
   max-width: 100%;
 }
-body main #realisation .container .grid-3-cols .card .card__content .card__content--title {
+body main #realisation .container .card-container .card .card__content .card__content--title {
   margin: 0.5rem;
   font-weight: 700;
 }
-body main #realisation .container .grid-3-cols .card .card__content .card__content__adresse {
+body main #realisation .container .card-container .card .card__content .card__content__adresse {
   margin: 0;
 }
-body main #realisation .container .flex-container {
+body main #realisation .container .btn-container {
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
 }
-body main #realisation .container .flex-container a {
+body main #realisation .container .btn-container a {
   display: inline-block;
   padding: 20px 40px;
   border-radius: 4px;
@@ -485,7 +481,7 @@ body main #realisation .container .flex-container a {
   border: 1px solid #112E3E;
   transition: all 0.3s ease;
 }
-body main #realisation .container .flex-container a:hover {
+body main #realisation .container .btn-container a:hover {
   background-color: white;
   color: #112E3E;
 }
@@ -502,24 +498,24 @@ body main #contact .container > p {
   text-transform: uppercase;
   margin: 0 0 4rem;
 }
-body main #contact .container .grid-3-cols {
+body main #contact .container .card-container {
   gap: 2rem;
 }
-body main #contact .container .grid-3-cols .card {
+body main #contact .container .card-container .card {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-body main #contact .container .grid-3-cols .card .card__img {
+body main #contact .container .card-container .card .card__img {
   height: 90px;
 }
-body main #contact .container .grid-3-cols .card .card__img img {
+body main #contact .container .card-container .card .card__img img {
   height: 100%;
 }
-body main #contact .container .grid-3-cols .card .card__content h3 {
+body main #contact .container .card-container .card .card__content h3 {
   text-transform: uppercase;
 }
-body main #contact .container .grid-3-cols .card .card__content p {
+body main #contact .container .card-container .card .card__content p {
   line-height: 0.5rem;
 }
 
@@ -600,51 +596,51 @@ footer .container {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
-footer .container .grid-3-cols {
+footer .container .footer-container {
   grid-template-columns: 250px auto 250px;
   gap: 2rem;
 }
-footer .container .grid-3-cols .grid__col {
+footer .container .footer-container .footer_container {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-footer .container .grid-3-cols .grid__col:last-child::before {
+footer .container .footer-container .footer_container:last-child::before {
   content: "";
   position: absolute;
   left: -1rem;
   height: 100%;
   border-left: 1px solid white;
 }
-footer .container .grid-3-cols .grid__col:nth-child(2) {
+footer .container .footer-container .footer_container:nth-child(2) {
   font-family: "Lato Thin", sans-serif;
   font-weight: 100;
   line-height: 1.5rem;
 }
-footer .container .grid-3-cols .grid__col:nth-child(3) p {
+footer .container .footer-container .footer_container:nth-child(3) p {
   margin: 0;
   padding: 0;
   line-height: 1.5rem;
 }
-footer .container .grid-3-cols .grid__col:nth-child(3) p:first-child {
+footer .container .footer-container .footer_container:nth-child(3) p:first-child {
   margin-bottom: 2rem;
 }
-footer .container .grid-3-cols .grid__col .footer__img {
+footer .container .footer-container .footer_container .footer__img {
   width: 100%;
 }
-footer .container .grid-3-cols .grid__col .footer__img img {
+footer .container .footer-container .footer_container .footer__img img {
   width: 100%;
 }
-footer .container .grid-3-cols .grid__col .flex-container {
+footer .container .footer-container .footer_container .reseau-container {
   display: flex;
   gap: 0.5rem;
 }
-footer .container .grid-3-cols .grid__col .flex-container .reseau__img {
+footer .container .footer-container .footer_container .reseau-container .reseau__img {
   width: 30px;
   height: 30px;
 }
-footer .container .grid-3-cols .grid__col .flex-container .reseau__img img {
+footer .container .footer-container .footer_container .reseau-container .reseau__img img {
   width: 100%;
 }
 footer .container > p {
@@ -660,42 +656,42 @@ footer .container > p {
   header .container .nav__burger {
     display: inline-block;
   }
-  #realisation .grid-3-cols {
+  #realisation .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  footer .container .grid-3-cols {
+  footer .container .footer-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  footer .container .grid-3-cols .grid__col:nth-child(-n+2) {
+  footer .container .footer-container .grid__col:nth-child(-n+2) {
     justify-content: flex-start;
   }
 }
 @media screen and (max-width: 500px) {
-  #rendez-vous .container .grid-3-cols {
+  #rendez-vous .container .card-container {
     grid-template-columns: 1fr;
   }
-  #rendez-vous .container .grid-3-cols .card:nth-child(3) {
+  #rendez-vous .container .card-container .card:nth-child(3) {
     grid-column: 1/2;
   }
-  #realisation .container .grid-3-cols {
+  #realisation .container .card-container {
     grid-template-columns: 1fr;
   }
-  #contact .container .grid-3-cols {
+  #contact .container .card-container {
     grid-template-columns: 1fr;
   }
-  #contact .container .grid-3-cols .card:nth-child(3) {
+  #contact .container .card-container .card:nth-child(3) {
     grid-column: 1/2;
   }
-  footer .container .grid-3-cols {
+  footer .container .footer-container {
     grid-template-columns: 1fr;
   }
-  footer .container .grid-3-cols .grid__col {
+  footer .container .footer-container .grid__col {
     text-align: center;
   }
-  footer .container .grid-3-cols .grid__col:nth-child(3) {
+  footer .container .footer-container .grid__col:nth-child(3) {
     align-items: center;
   }
-  footer .container .grid-3-cols .grid__col:nth-child(3)::before {
+  footer .container .footer-container .grid__col:nth-child(3)::before {
     border: none;
   }
 }
