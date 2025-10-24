@@ -3,25 +3,12 @@
 @media screen and (max-width: 768px) {
 
     header {
-        height: 20vh;
         .container {
-            flex-direction: column;
-        }
-    }
-
-    #rendez-vous {
-        .grid-3-cols {
-            grid-template-columns: repeat(4,1fr);
-
-            .card {
-                &:nth-child(-n + 2) {
-                    grid-column: span 2;
-                }
-
-                &:nth-child(3) {
-                    grid-column: 2/4;
-                    align-self: center;
-                }
+            nav {
+                display: none;
+            }
+            .nav__burger {
+                display: inline-block;
             }
         }
     }
@@ -32,18 +19,50 @@
         }
     }
 
-    #contact {
-        .grid-3-cols {
-            grid-template-columns: repeat(4,1fr);
-
-            .card {
-                &:nth-child(-n + 2) {
-                    grid-column: span 2;
+    footer {
+        .container {
+            .grid-3-cols {
+                grid-template-columns: 1fr 1fr 1fr;
+                .grid__col {
+                    &:nth-child(-n + 2) {
+                        justify-content: flex-start;
+                    }
                 }
+            }
+        }
+    }
+}
 
-                &:nth-child(3) {
-                    grid-column: 2/4;
-                    align-self: center;
+@media screen and (max-width: 500px) {
+    #rendez-vous {
+        .container {
+            .grid-3-cols {
+                grid-template-columns: 1fr;
+                .card {
+                    &:nth-child(3) {
+                        grid-column: 1/2;
+                    }
+                }
+            }
+        }
+    }
+
+    #realisation {
+        .container {
+            .grid-3-cols {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    #contact {
+        .container {
+            .grid-3-cols {
+                grid-template-columns: 1fr;
+                .card {
+                    &:nth-child(3) {
+                        grid-column: 1/2;
+                    }
                 }
             }
         }
@@ -55,21 +74,15 @@
                 grid-template-columns: 1fr;
                 .grid__col {
                     text-align: center;
-                    &:nth-child(1) {
-                        grid-row: 3/4;
-                    }
                     &:nth-child(3){
                         align-items: center;
 
                         &::before {
                             border: none;
-                            inset: 0;
-                            top: -20px;
-                            border-top: 1px solid variable.$white;
                         }
                     }
                 }
             }
         }
-    }
+    }  
 }

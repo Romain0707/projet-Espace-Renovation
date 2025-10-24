@@ -90,6 +90,13 @@ body {
                     .btn {
                         @include mixin.button;
                         margin-block: 2rem;
+                        border: 1px solid variable.$primary-clr;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            background-color: variable.$white;
+                            color: variable.$primary-clr;
+                        }
                     }
                 }
             }
@@ -114,8 +121,11 @@ body {
 
                     .card {
                         .card__img {
+                            width: 100%;
+
                             img {
-                                width: 100%;
+                                max-width: 100%;
+                                
                             }
                         }
                         .card__content {
@@ -137,6 +147,13 @@ body {
                     
                     a {
                         @include mixin.button;
+                        border: 1px solid variable.$primary-clr;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            background-color: variable.$white;
+                            color: variable.$primary-clr;
+                        }
                     }
                 }
             }
